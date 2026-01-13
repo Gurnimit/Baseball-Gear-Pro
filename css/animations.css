@@ -1,0 +1,587 @@
+/* ============================================
+   ANIMATIONS.CSS - Transitions & Animations
+   ============================================ */
+
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+@keyframes underlineExpand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes flipCard {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(10deg);
+    }
+}
+
+/* ============================================
+   BUTTON ANIMATIONS
+   ============================================ */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary {
+    animation: slideInUp 0.2s ease-out;
+}
+
+.btn-secondary {
+    animation: slideInUp 0.2s ease-out;
+}
+
+/* ============================================
+   CARD ANIMATIONS
+   ============================================ */
+
+.feature-card,
+.product-card,
+.team-member,
+.contact-card,
+.pricing-card {
+    animation: slideInUp 0.2s ease-out backwards;
+}
+
+.feature-card {
+    animation-delay: 0.05s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.feature-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.product-card {
+    animation-delay: 0.05s;
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.product-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.product-card:nth-child(4) {
+    animation-delay: 0.05s;
+}
+
+.product-card:nth-child(5) {
+    animation-delay: 0.1s;
+}
+
+.product-card:nth-child(6) {
+    animation-delay: 0.15s;
+}
+
+/* ============================================
+   TEXT ANIMATIONS
+   ============================================ */
+
+.hero-title {
+    animation: slideInDown 0.8s ease-out;
+}
+
+.hero-subtitle {
+    animation: slideInUp 0.8s ease-out 0.2s backwards;
+}
+
+.section-title {
+    animation: scaleIn 0.6s ease-out;
+}
+
+/* ============================================
+   LINK ANIMATIONS
+   ============================================ */
+
+a {
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* ============================================
+   INPUT ANIMATIONS
+   ============================================ */
+
+input:focus,
+textarea:focus,
+select:focus {
+    animation: glow 1s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    transition: all var(--transition-base);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+    transition: color var(--transition-base);
+}
+
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="tel"]:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+/* ============================================
+   TOGGLE ANIMATION (CSS ONLY)
+   ============================================ */
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    transition: 0.4s;
+    border-radius: var(--radius-full);
+}
+
+.toggle-slider::before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--white);
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+}
+
+.toggle-input:checked + .toggle-slider {
+    background-color: var(--primary-color);
+}
+
+.toggle-input:checked + .toggle-slider::before {
+    transform: translateX(26px);
+}
+
+/* ============================================
+   FORM ANIMATIONS
+   ============================================ */
+
+.form-group {
+    animation: slideInUp 0.6s ease-out backwards;
+}
+
+.form-group:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.form-group:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.form-group:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.form-group:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.form-group:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.form-group:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.form-group:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.form-group:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+/* ============================================
+   DETAILS/SUMMARY ANIMATIONS (FAQ)
+   ============================================ */
+
+details[open] summary ~ * {
+    animation: slideInUp 0.3s ease-out;
+}
+
+summary {
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+summary:hover {
+    color: var(--primary-color);
+}
+
+summary:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+    border-radius: var(--radius-md);
+}
+
+/* ============================================
+   PRICING CARD ANIMATIONS
+   ============================================ */
+
+.pricing-card {
+    animation: slideInUp 0.6s ease-out backwards;
+}
+
+.pricing-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.pricing-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.pricing-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.pricing-card.featured {
+    animation: scaleIn 0.6s ease-out 0.2s backwards;
+}
+
+.featured-badge {
+    animation: slideInDown 0.2s ease-out 0.1s backwards;
+}
+
+/* ============================================
+   HOVER STATE ANIMATIONS
+   ============================================ */
+
+.feature-card:hover {
+    animation: none;
+}
+
+.product-card:hover .product-image::after {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.team-member:hover .member-avatar {
+    animation: pulse 0.6s ease-in-out;
+}
+
+.contact-card:hover .card-icon {
+    animation: rotateIn 0.4s ease-out;
+}
+
+/* ============================================
+   PAGE TRANSITION ANIMATIONS
+   ============================================ */
+
+body {
+    animation: fadeIn 0.4s ease-out;
+}
+
+header {
+    animation: slideInDown 0.6s ease-out;
+}
+
+footer {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* ============================================
+   ATTENTION SEEKER ANIMATIONS
+   ============================================ */
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.3);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.3);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+.save-badge {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* ============================================
+   BADGE ANIMATIONS
+   ============================================ */
+
+.product-badge,
+.product-label {
+    animation: slideInRight 0.4s ease-out;
+}
+
+/* ============================================
+   FOCUS-VISIBLE ANIMATIONS
+   ============================================ */
+
+*:focus-visible {
+    animation: glow 0.3s ease-out;
+}
+
+/* ============================================
+   RESPONSIVE ANIMATION ADJUSTMENTS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card,
+    .product-card,
+    .team-member,
+    .contact-card,
+    .pricing-card {
+        animation-delay: 0s;
+    }
+
+    .btn {
+        animation: slideInUp 0.4s ease-out;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY - HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: more) {
+    .btn {
+        border-width: 3px;
+    }
+
+    input,
+    select,
+    textarea {
+        border-width: 2px;
+    }
+
+    .nav-link::after {
+        height: 3px;
+    }
+}
+
+/* ============================================
+   DARK MODE SUPPORT
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --white: #1a1a1a;
+        --text-dark: #e0e0e0;
+        --text-light: #a0a0a0;
+        --light-color: #2a2a2a;
+        --border-color: #404040;
+    }
+
+    body {
+        background-color: #0d0d0d;
+        color: var(--text-dark);
+    }
+}

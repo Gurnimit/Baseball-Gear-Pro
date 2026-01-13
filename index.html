@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baseball Gear Pro - Premium Baseball Equipment Store">
+    <title>Baseball Gear Pro - Premium Baseball Equipment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/3d-effects.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="navbar-content">
+                    <a href="index.html" class="logo" aria-label="Baseball Gear Pro Home">
+                        <i class="fas fa-baseball-ball"></i>
+                        <span>Baseball Gear Pro</span>
+                    </a>
+                    <div class="nav-right">
+                        <ul class="nav-menu">
+                            <li><a href="index.html" class="nav-link active" data-en="Home" data-es="Inicio" data-ch="首页">Home</a></li>
+                            <li><a href="about.html" class="nav-link" data-en="About" data-es="Acerca de" data-ch="关于">About</a></li>
+                            <li><a href="services.html" class="nav-link" data-en="Products" data-es="Productos" data-ch="产品">Products</a></li>
+                            <li><a href="pricing.html" class="nav-link" data-en="Pricing" data-es="Precios" data-ch="价格">Pricing</a></li>
+                            <li><a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto" data-ch="联系">Contact</a></li>
+                        </ul>
+                        <div class="language-selector">
+                            <select id="languageSelect" class="lang-select" aria-label="Select Language">
+                                <option value="en" selected>English (EN)</option>
+                                <option value="es">Español (ES)</option>
+                                <option value="ch">中文 (CH)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <h1 id="hero-title" class="hero-title" data-en="Champions Choose Quality Baseball Gear" data-es="Los Campeones Eligen Equipo de Béisbol de Calidad" data-ch="冠军选择高质量的棒球装备">Champions Choose Quality Baseball Gear</h1>
+            <p class="hero-subtitle" data-en="Professional Baseball Equipment for Serious Athletes" data-es="Equipo Profesional de Béisbol para Atletas Serios" data-ch="为严肃运动员提供专业棒球装备">Professional Baseball Equipment for Serious Athletes</p>
+            <a href="services.html" class="btn btn-primary btn-lg" data-en="Shop Now" data-es="Comprar Ahora" data-ch="现在购买">Shop Now</a>
+        </div>
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" aria-labelledby="features-title">
+        <div class="container">
+            <h2 id="features-title" class="section-title" data-en="Why Choose Baseball Pro" data-es="Por Qué Elegir Baseball Pro" data-ch="为什么选择棒球专业版">Why Choose Baseball Pro</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 data-en="Premium Quality" data-es="Calidad Premium" data-ch="优质品质">Premium Quality</h3>
+                    <p data-en="Professional-grade baseball equipment tested by champions" data-es="Equipo de béisbol de grado profesional probado por campeones" data-ch="经过冠军测试的专业级棒球装备">Professional-grade baseball equipment tested by champions</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 data-en="Fast Delivery" data-es="Entrega Rápida" data-ch="快速交付">Fast Delivery</h3>
+                    <p data-en="Quick shipping to get you on the field in 2-3 business days" data-es="Envío rápido para que estés en el campo en 2-3 días hábiles" data-ch="快速送货，让您在2-3个工作日内上场">Quick shipping to get you on the field in 2-3 business days</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Guaranteed Protection" data-es="Protección Garantizada" data-ch="保证保护">Guaranteed Protection</h3>
+                    <p data-en="100% satisfaction guarantee and hassle-free returns within 30 days" data-es="Garantía de satisfacción del 100% y devoluciones sin complicaciones en 30 días" data-ch="100%满意度保证和30天内无忧退货">100% satisfaction guarantee and hassle-free returns within 30 days</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 data-en="Expert Support" data-es="Soporte de Expertos" data-ch="专家支持">Expert Support</h3>
+                    <p data-en="Dedicated baseball experts ready to help you choose the right gear" data-es="Expertos en béisbol dedicados para ayudarte a elegir el equipo correcto" data-ch="敬业的棒球专家准备帮助您选择合适的装备">Dedicated baseball experts ready to help you choose the right gear</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products Section -->
+    <section class="popular-section" aria-labelledby="popular-title">
+        <div class="container">
+            <h2 id="popular-title" class="section-title" data-en="Popular Baseball Gear" data-es="Equipo de Béisbol Popular" data-ch="热门棒球装备">Popular Baseball Gear</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="piture/Baseball gloves.webp" alt="Pro Leather Glove" class="product-img">
+                        <span class="product-badge" data-en="Featured" data-es="Destacado" data-ch="特色">Featured</span>
+                    </div>
+                    <h3 data-en="Pro Leather Glove" data-es="Guante de Cuero Profesional" data-ch="职业皮革手套">Pro Leather Glove</h3>
+                    <p class="product-desc" data-en="Premium outfield glove for serious players" data-es="Guante de campo profesional para jugadores serios" data-ch="为认真的球员准备的优质外场手套">Premium outfield glove for serious players</p>
+                    <p class="product-price">$149.99</p>
+                    <a href="services.html" class="btn btn-secondary" data-en="View Details" data-es="Ver Detalles" data-ch="查看详情">View Details</a>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="piture/Baseball bat.webp" alt="Composite Baseball Bat" class="product-img">
+                        <span class="product-badge" data-en="Best Seller" data-es="Más Vendido" data-ch="畅销商品">Best Seller</span>
+                    </div>
+                    <h3 data-en="Composite Baseball Bat" data-es="Bate de Béisbol Compuesto" data-ch="复合棒球棒">Composite Baseball Bat</h3>
+                    <p class="product-desc" data-en="High-performance aluminum composite bat" data-es="Bate compuesto de aluminio de alto rendimiento" data-ch="高性能铝复合棒">High-performance aluminum composite bat</p>
+                    <p class="product-price">$299.99</p>
+                    <a href="services.html" class="btn btn-secondary" data-en="View Details" data-es="Ver Detalles" data-ch="查看详情">View Details</a>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="piture/Baseball Ball.webp" alt="Training Set" class="product-img">
+                        <span class="product-badge" data-en="Hot" data-es="Caliente" data-ch="热销">Hot</span>
+                    </div>
+                    <h3 data-en="Training Set" data-es="Conjunto de Entrenamiento" data-ch="训练套装">Training Set</h3>
+                    <p class="product-desc" data-en="Complete baseball training kit for all levels" data-es="Kit completo de entrenamiento de béisbol para todos los niveles" data-ch="适合所有级别的完整棒球训练套件">Complete baseball training kit for all levels</p>
+                    <p class="product-price">$89.99</p>
+                    <a href="services.html" class="btn btn-secondary" data-en="View Details" data-es="Ver Detalles" data-ch="查看详情">View Details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+            <div class="cta-content">
+                <h2 id="cta-title" data-en="Ready to Dominate the Diamond?" data-es="¿Listo para Dominar el Diamante?" data-ch="准备好统治棒球场了吗？">Ready to Dominate the Diamond?</h2>
+                <p data-en="Join thousands of players who trust Baseball Gear Pro for quality baseball equipment" data-es="Únete a miles de jugadores que confían en Baseball Gear Pro para equipos de béisbol de calidad" data-ch="加入数千名相信Baseball Gear Pro棒球装备质量的球员">Join thousands of players who trust Baseball Gear Pro for quality baseball equipment</p>
+                <a href="pricing.html" class="btn btn-primary" data-en="Explore Plans" data-es="Explorar Planes" data-ch="探索计划">Explore Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="About Baseball Gear Pro" data-es="Acerca de Baseball Gear Pro" data-ch="关于Baseball Gear Pro">About Baseball Gear Pro</h3>
+                    <p data-en="Premium baseball equipment since 2026. Trusted by athletes worldwide." data-es="Equipo de béisbol premium desde 2026. Confiado por atletas de todo el mundo." data-ch="自2026年以来的优质棒球装备。受全球运动员信赖。">Premium baseball equipment since 2026. Trusted by athletes worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-es="Enlaces Rápidos" data-ch="快速链接">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html" data-en="About Us" data-es="Sobre Nosotros" data-ch="关于我们">About Us</a></li>
+                        <li><a href="services.html" data-en="Products" data-es="Productos" data-ch="产品">Products</a></li>
+                        <li><a href="pricing.html" data-en="Pricing" data-es="Precios" data-ch="价格">Pricing</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-ch="联系">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Follow Us" data-es="Síguenos" data-ch="跟随我们">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Baseball Gear Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language switching functionality
+        const languageSelect = document.getElementById('languageSelect');
+        
+        // Function to change language
+        function changeLanguage(lang) {
+            localStorage.setItem('selectedLanguage', lang);
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) {
+                    element.textContent = text;
+                    element.setAttribute('data-current-lang', lang);
+                }
+            });
+        }
+
+        // Set default language from localStorage or English
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        languageSelect.value = savedLanguage;
+        changeLanguage(savedLanguage);
+
+        // Add event listener for language changes
+        languageSelect.addEventListener('change', (e) => {
+            changeLanguage(e.target.value);
+        });
+    </script>
+</body>
+</html>
